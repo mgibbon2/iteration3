@@ -42,8 +42,10 @@
               <h3 class="card-title"><%= project.title %></h3>
               <h4 class="card-description"><%= project.description %></h4>
               <a class="button" <%= link_to 'Show', project %></a>
-              <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-              <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% if user_signed_in? %>
+                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
+                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% end %>
             </div>
           <% end %>
         <% end %>
@@ -58,8 +60,10 @@
               <h3 class="card-title"><%= project.title %></h3>
               <h4 class="card-description"><%= project.description %></h4>
               <a class="button" <%= link_to 'Show', project %></a>
-              <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-              <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% if user_signed_in? %>
+                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
+                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% end %>
             </div>
           <% end %>
         <% end %>
@@ -74,8 +78,10 @@
               <h3 class="card-title"><%= project.title %></h3>
               <h4 class="card-description"><%= project.description %></h4>
               <a class="button" <%= link_to 'Show', project %></a>
-              <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-              <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% if user_signed_in? %>
+                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
+                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% end %>
             </div>
           <% end %>
         <% end %>
@@ -90,8 +96,10 @@
               <h3 class="card-title"><%= project.title %></h3>
               <h4 class="card-description"><%= project.description %></h4>
               <a class="button" <%= link_to 'Show', project %></a>
-              <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-              <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% if user_signed_in? %>
+                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
+                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% end %>
             </div>
           <% end %>
         <% end %>
@@ -106,8 +114,10 @@
               <h3 class="card-title"><%= project.title %></h3>
               <h4 class="card-description"><%= project.description %></h4>
               <a class="button" <%= link_to 'Show', project %></a>
-              <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-              <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% if user_signed_in? %>
+                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
+                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% end %>
             </div>
           <% end %>
         <% end %>
@@ -122,8 +132,10 @@
               <h3 class="card-title"><%= project.title %></h3>
               <h4 class="card-description"><%= project.description %></h4>
               <a class="button" <%= link_to 'Show', project %></a>
-              <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-              <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% if user_signed_in? %>
+                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
+                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% end %>
             </div>
           <% end %>
         <% end %>
@@ -138,8 +150,10 @@
               <h3 class="card-title"><%= project.title %></h3>
               <h4 class="card-description"><%= project.description %></h4>
               <a class="button" <%= link_to 'Show', project %></a>
-              <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-              <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% if user_signed_in? %>
+                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
+                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+              <% end %>
             </div>
           <% end %>
         <% end %>
