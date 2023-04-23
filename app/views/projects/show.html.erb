@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @project.day %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @project.event_type %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @project.priority %>
+</p>
+
+<a class="button"<%= link_to 'Edit', edit_project_path(@project) %></a>
+<a class="button"<%= link_to 'Back', projects_path %></a>
