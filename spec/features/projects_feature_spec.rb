@@ -1,7 +1,8 @@
-require "rails_helper"
+require 'rails_helper'
+require 'factory_bot_rails'
 RSpec.feature "Projects", type: :feature do
     context "Update project" do
-      let(:project) { Project.create(title: "Test title", description: "Test content") }
+      let(:project) { Project.create(title: "Test Title", description: "Test description", day: "Monday", event_type: "Default", priority: 5) }
       before(:each) do
         user = FactoryBot.create(:user)
         login_as(user)
@@ -41,6 +42,9 @@ RSpec.feature "Projects", type: :feature do
             within("form") do
                 fill_in "Title", with: "Test title"
                 fill_in "Description", with: "Test description"
+                fill_in "Description", with: "Test"
+                fill_in "Event type", with: "Test"
+                fill_in "Priority", with: 5
             end
             click_button "Create Project"
             expect(page).to have_content("Project was successfully created")
@@ -77,10 +81,6 @@ RSpec.feature "Projects", type: :feature do
         end
         expect(page).to have_content("Welcome! You have signed up successfully.")
       end
-  
-  
-  
-  
       scenario "should log in" do
         user = FactoryBot.create(:user)
         login_as(user)

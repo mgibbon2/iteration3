@@ -1,4 +1,4 @@
-require "rails_helper"
+require 'rails_helper'
 describe "Project Attribute Requirements on Create", :type => :model do
   context "validation tests" do
     it "ensures the title is present when creating project" do
@@ -14,7 +14,7 @@ describe "Project Attribute Requirements on Create", :type => :model do
       expect(project.save).to eq(false)
     end
     it "should be able to save project when have description and title" do
-      project = Project.new(title: "Title", description: "Content of the description")
+      project = Project.new(title: "Title", description: "Content of the description", day: "Monday", event_type: "Default", priority: 5)
       expect(project.save).to eq(true)
     end
   end
