@@ -8294,3 +8294,226 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 5296)
 
 
+Started GET "/" for 172.17.0.1 at 2023-04-25 02:47:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:37
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 8426)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 15359)
+Completed 200 OK in 57ms (Views: 38.6ms | ActiveRecord: 0.5ms | Allocations: 19597)
+
+
+Started GET "/" for 172.17.0.1 at 2023-04-25 02:52:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:37
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1027)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4773)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5376)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20230425030427)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230425030427"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/projects/1" for 172.17.0.1 at 2023-04-25 03:11:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 807)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 7887)
+Completed 200 OK in 31ms (Views: 11.3ms | ActiveRecord: 0.6ms | Allocations: 18998)
+
+
+Started GET "/projects/1/edit" for 172.17.0.1 at 2023-04-25 03:11:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms | Allocations: 1829)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2023-04-25 03:11:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /var/lib/gems/3.0.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/3.0.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 700)
+  Rendered /var/lib/gems/3.0.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3976)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 7857)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 14532)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2023-04-25 03:11:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2023-04-25 03:11:13.361675"], ["updated_at", "2023-04-25 03:11:13.361995"], ["id", 1]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/projects/1/edit
+Completed 303 See Other in 198ms (ActiveRecord: 8.6ms | Allocations: 12880)
+
+
+Started GET "/projects/1/edit" for 172.17.0.1 at 2023-04-25 03:11:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 6.6ms | Allocations: 3180)
+  Rendered projects/edit.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3657)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 7464)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 10052)
+
+
+Started PATCH "/projects/1" for 172.17.0.1 at 2023-04-25 03:11:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "project"=>{"title"=>"test title", "description"=>"test description", "day"=>"Sunday", "event_type"=>"School", "priority"=>"21"}, "commit"=>"Update Project", "id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 2715)
+
+
+Started GET "/projects/1" for 172.17.0.1 at 2023-04-25 03:11:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4585)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 5641)
+
+
+Started GET "/projects" for 172.17.0.1 at 2023-04-25 03:11:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:37
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:45
+  Rendered projects/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 3468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 7076)
+Completed 200 OK in 34ms (Views: 25.9ms | ActiveRecord: 0.3ms | Allocations: 7805)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2023-04-25 03:11:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2023-04-25 03:11:20.526364"], ["id", 1]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 13ms (ActiveRecord: 5.3ms | Allocations: 7166)
+
+
+Started GET "/" for 172.17.0.1 at 2023-04-25 03:11:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:37
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4494)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 4968)
+
+
