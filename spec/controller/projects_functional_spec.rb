@@ -8,13 +8,13 @@ RSpec.describe ProjectsController, :type => :controller do
             end
         end
         context "GET #show" do
-            let!(:project) { Project.create(title: "Test title", description: "Test description") }
+            let!(:project) { Project.create(title: "Test title", description: "Test description", day: "Monday", event_type: "Default", priority: 5) }
             it "returns a success response" do
                 expect(response).to have_http_status(:ok)
             end
         end
         context "GET #new" do
-            let!(:project) { Project.create(title:"Test title", description: "Test description") }
+            let!(:project) { Project.create(title: "Test title", description: "Test description", day: "Monday", event_type: "Default", priority: 5) }
             it "returns a success response" do
                 expect(response).to have_http_status(:ok)
             end

@@ -30,6 +30,22 @@ RSpec.feature "Projects", type: :feature do
         click_button "Update Project"
         expect(page).to have_content("Title can't be blank")
       end
+
+      scenario "should fail" do
+        within("form") do
+          fill_in "Event type", with: ""
+        end
+        click_button "Update Project"
+        expect(page).to have_content("Event type can't be blank")
+      end
+
+      scenario "should fail" do
+        within("form") do
+          fill_in "Priority", with: ""
+        end
+        click_button "Update Project"
+        expect(page).to have_content("Priority can't be blank")
+      end
     end
 
     context "Create project" do
