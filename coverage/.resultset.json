@@ -10,6 +10,24 @@
           null,
           1,
           5,
+          5,
+          5,
+          5,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
           null,
           null,
           null,
@@ -42,13 +60,13 @@
           null,
           null,
           1,
-          5,
-          5,
+          4,
+          4,
           2,
           1,
           null,
-          8,
-          4,
+          6,
+          3,
           null,
           null,
           null,
@@ -66,12 +84,12 @@
           1,
           null,
           1,
-          12,
+          10,
           null,
           null,
           null,
           1,
-          8,
+          7,
           null,
           null
         ]
@@ -79,6 +97,20 @@
       "/root/iteration3/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
           null
         ]
       },
@@ -170,6 +202,6 @@
         }
       }
     },
-    "timestamp": 1682708605
+    "timestamp": 1682727712
   }
 }

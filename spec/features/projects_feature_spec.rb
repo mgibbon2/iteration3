@@ -33,14 +33,6 @@ RSpec.feature "Projects", type: :feature do
 
       scenario "should fail" do
         within("form") do
-          fill_in "Event type", with: ""
-        end
-        click_button "Update Project"
-        expect(page).to have_content("Event type can't be blank")
-      end
-
-      scenario "should fail" do
-        within("form") do
           fill_in "Priority", with: ""
         end
         click_button "Update Project"
@@ -58,8 +50,8 @@ RSpec.feature "Projects", type: :feature do
             within("form") do
                 fill_in "Title", with: "Test title"
                 fill_in "Description", with: "Test description"
-                fill_in "Description", with: "Test"
-                fill_in "Event type", with: "Test"
+                select "Monday", from: "Day"
+                select "Personal", from: "Event type"
                 fill_in "Priority", with: 5
             end
             click_button "Create Project"

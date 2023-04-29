@@ -2,40 +2,36 @@
 <div class="title">
   <h1>Calendar</h1>
   <a class="button"<%= link_to 'Add Event', new_project_path %></a>
+  <a class="button" <%= link_to "Show Personal", toggle_show_personal_path %></a>
+  <a class="button" <%= link_to "Show School", toggle_show_school_path %></a>
+  <a class="button" <%= link_to "Show Work", toggle_show_work_path %></a>
 </div>
-
+<% days_of_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] %>
 <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th class="col">
-        <h1>Sunday</h1>
-      </th>
-      <th class="col">
-        <h1>Monday</h1>
-      </th>
-      <th class="col">
-        <h1>Tuesday</h1>
-      </th>
-      <th class="col">
-        <h1>Wednesday</h1>
-      </th>
-      <th class="col">
-        <h1>Thursday</h1>
-      </th>
-      <th class="col">
-        <h1>Friday</h1>
-      </th>
-      <th class="col">
-        <h1>Saturday</h1>
-      </th>
-    </tr>
-  </thead>
+<thead>
+<tr>
+  <% days_of_week.each do |day| %>
+    <th class="col">
+      <h1><%= day %></h1>
+    </th>
+  <% end %>
+</tr>
+</thead>
   <tbody>
     <tr>
-      <td>
+      <% days_of_week.each do |day| %>
+        <td>
         <% counter = 0 %>
         <% @projects.each do |project| %>
-          <% if project.day == "Sunday" %>
+            <% show = false %>
+            <% if project.event_type == "Personal" && @show_personal %>
+              <% show = true %>
+            <% elsif project.event_type == "School" && @show_school %>
+              <% show = true %>
+            <% elsif project.event_type == "Work" && @show_work %>
+              <% show = true %>
+            <% end %>
+          <% if project.day == day && show %>
             <% counter += 1 %>
             <div class="griditem">
               <h3 class="card-number">Event <%= counter %></h3>
@@ -49,115 +45,8 @@
             </div>
           <% end %>
         <% end %>
-      </td>
-      <td class="col">
-        <% counter = 0 %>
-        <% @projects.each do |project| %>
-          <% if project.day == "Monday" %>
-            <% counter += 1 %>
-            <div class="griditem">
-              <h3 class="card-number">Event <%= counter %></h3>
-              <h3 class="card-title"><%= project.title %></h3>
-              <h4 class="card-description"><%= project.description %></h4>
-              <a class="button" <%= link_to 'Show', project %></a>
-              <% if user_signed_in? %>
-                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
-              <% end %>
-            </div>
-          <% end %>
-        <% end %>
-      </td>
-      <td class="col">
-        <% counter = 0 %>
-        <% @projects.each do |project| %>
-          <% if project.day == "Tuesday" %>
-            <% counter += 1 %>
-            <div class="griditem">
-              <h3 class="card-number">Event <%= counter %></h3>
-              <h3 class="card-title"><%= project.title %></h3>
-              <h4 class="card-description"><%= project.description %></h4>
-              <a class="button" <%= link_to 'Show', project %></a>
-              <% if user_signed_in? %>
-                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
-              <% end %>
-            </div>
-          <% end %>
-        <% end %>
-      </td>
-      <td class="col">
-        <% counter = 0 %>
-        <% @projects.each do |project| %>
-          <% if project.day == "Wednesday" %>
-            <% counter += 1 %>
-            <div class="griditem">
-              <h3 class="card-number">Event <%= counter %></h3>
-              <h3 class="card-title"><%= project.title %></h3>
-              <h4 class="card-description"><%= project.description %></h4>
-              <a class="button" <%= link_to 'Show', project %></a>
-              <% if user_signed_in? %>
-                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
-              <% end %>
-            </div>
-          <% end %>
-        <% end %>
-      </td>
-      <td class="col">
-        <% counter = 0 %>
-        <% @projects.each do |project| %>
-          <% if project.day == "Thursday" %>
-            <% counter += 1 %>
-            <div class="griditem">
-              <h3 class="card-number">Event <%= counter %></h3>
-              <h3 class="card-title"><%= project.title %></h3>
-              <h4 class="card-description"><%= project.description %></h4>
-              <a class="button" <%= link_to 'Show', project %></a>
-              <% if user_signed_in? %>
-                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
-              <% end %>
-            </div>
-          <% end %>
-        <% end %>
-      </td>
-      <td class="col">
-        <% counter = 0 %>
-        <% @projects.each do |project| %>
-          <% if project.day == "Friday" %>
-            <% counter += 1 %>
-            <div class="griditem">
-              <h3 class="card-number">Event <%= counter %></h3>
-              <h3 class="card-title"><%= project.title %></h3>
-              <h4 class="card-description"><%= project.description %></h4>
-              <a class="button" <%= link_to 'Show', project %></a>
-              <% if user_signed_in? %>
-                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
-              <% end %>
-            </div>
-          <% end %>
-        <% end %>
-      </td>
-      <td>
-        <% counter = 0 %>
-        <% @projects.each do |project| %>
-          <% if project.day == "Saturday" %>
-            <% counter += 1 %>
-            <div class="griditem">
-              <h3 class="card-number">Event <%= counter %></h3>
-              <h3 class="card-title"><%= project.title %></h3>
-              <h4 class="card-description"><%= project.description %></h4>
-              <a class="button" <%= link_to 'Show', project %></a>
-              <% if user_signed_in? %>
-                <a class="button" <%= link_to 'Edit', edit_project_path(project) %></a>
-                <a class="button"<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a>
-              <% end %>
-            </div>
-          <% end %>
-        <% end %>
-      </td>
+        </td>
+      <% end %>
     </tr>
   </tbody>
 </table>
