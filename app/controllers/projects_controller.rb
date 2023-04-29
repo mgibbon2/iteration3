@@ -5,24 +5,9 @@ class ProjectsController < ApplicationController
   # GET /projects or /projects.json
   def index
     @projects = Project.all
-    @show_personal = true
-    @show_school = true
-    @show_work = true
-  end
-
-  def toggle_show_personal
-    show_personal = !show_personal
-    redirect_to root_path
-  end
-
-  def toggle_show_school
-    show_school = !show_school
-    redirect_to root_path
-  end
-
-  def toggle_show_work
-    show_work = !show_work
-    redirect_to root_path
+    @show_personal = false
+    @show_school = false
+    @show_work = false
   end
 
   # GET /projects/1 or /projects/1.json
